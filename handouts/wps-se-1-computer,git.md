@@ -221,10 +221,10 @@ Hardware <--> `Operating System` <--> Application Software <--> User
 - Windows 2000
 
 ---
-#### Windwos 9x vs Windows NT
+#### Windows 9x vs Windows NT
 MS-DOS based -> 16bit
-WindwosNT Kernel(3.1) based -> 32bit
-WindwosNT Kernel(6.1) based -> x86-64(AMD64)
+WindowsNT Kernel(3.1) based -> 32bit
+WindowsNT Kernel(6.1) based -> x86-64(AMD64)
 
 
 ---
@@ -569,4 +569,4 @@ Make some change
 ---
 ## Assignment
 [Try git](https://try.github.io/levels/1/challenges/1)
-마지막 결과를 Print Screen 후 매니저님께 제출해주세요.(100)
+마지막 결과를 Print Screen 후 매니저님께 제출해주세요.
