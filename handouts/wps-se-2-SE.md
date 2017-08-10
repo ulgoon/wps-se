@@ -124,7 +124,7 @@ It aims at establishing a **culture** and **environment** where building, testin
 			- `집에서 해결함`
 				- `냉장고엔 뭐가있지? 밥은 해놨나? 라면이라도 먹을까? ...`
 			- `나가서 해결함` 
-				- `편의점? 식당? 패스트푸드? 레스토랑??`
+                    - `편의점? 식당? 패스트푸드? 레스토랑??`
 
 
 ---
@@ -433,9 +433,15 @@ in Agile
 2. Fizzbuzz
 3. Profile Porfolio Page
 
+ex)
+회차 최소 최대 중간값
+ 1 1 10 5
+ 2 4 8 6
+ 3 5 5 5
+ 
 
-
-
+---
+## Pair Programming
 
 ---
 ## Pair Programming
