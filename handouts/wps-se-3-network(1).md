@@ -1,6 +1,6 @@
 # Fastcampus 
 ## Web Programming & Frontend Dev SCHOOL
-### Intro to Computer Science
+### Intro to Network Computing
 
 ---
 <!--
@@ -33,13 +33,6 @@ A computer network or data network is a telecommunications network which allows 
 - Distributor(Switch Hub)
 - Router
 - Network card
-
----
-## Submarine Cable Map
-[https://www.submarinecablemap.com/](https://www.submarinecablemap.com/)
-
----
-![](../img/cablemap.png)
 
 ---
 ## 커버 범위에 따른 네트워크 구분
@@ -87,14 +80,26 @@ wifi: 와이파이 얼라이언스의 상표. 802.11 기술을 사용하는 무�
 - Power line Networking(IEEE 1901)
 
 ---
+## Star, Ring, Bus
+
+---
+## Network Topology
+![](https://upload.wikimedia.org/wikipedia/commons/9/96/NetworkTopologies.png)
+
+---
+## Submarine Cable Map
+[https://www.submarinecablemap.com/](https://www.submarinecablemap.com/)
+
+---
+![](../img/cablemap.png)
+
+---
 ## Ethernet
 - 전세계의 사무실이나 가정에서 일반적으로 사용되는 유선 LAN에서 가장 많이 활용되는 기술 규격
 - ether == 에테르 == 빛의 매질
 - IEEE 802.3 규약 기반
 - OSI 7 Layer에서 Data-link Layer 에 위치
 - http://standards.ieee.org/about/get/802/802.3.html
-
-
 
 
 ---
