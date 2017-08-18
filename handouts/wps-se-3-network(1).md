@@ -380,7 +380,7 @@ User(Universal) Datagram Protocol
 ---
 ### Wireshark
 [download](https://www.wireshark.org/#download) 
-ip.addr !=  xxx.xxx.xxx.xxx && tcp
+ip.addr ==  xxx.xxx.xxx.xxx && tcp
 
 
 ---
@@ -535,11 +535,6 @@ key-value
 	key: value
 }
 ```
-
----
-## Civilization
-![](https://image-proxy.namuwikiusercontent.com/r/http%3A%2F%2Fwww.dndjunkie.com%2Fcivilopedia%2Fimages%2Flarge%2FTECH_COMPUTERS.png)
-![](https://image-proxy.namuwikiusercontent.com/r/http%3A%2F%2Fwww.dndjunkie.com%2Fcivilopedia%2Fimages%2Flarge%2FBUILDING_GREAT_FIREWALL.png)
 
 ---
 ## Web Programming
