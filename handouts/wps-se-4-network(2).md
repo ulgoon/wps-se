@@ -184,8 +184,8 @@ cons:
 |HTTP||REST|Status Code|
 |:--:|:--:|:--:|:--:|
 |GET||read|200 OK|
-|POST||update|200 OK|
-|PUT||create|201 CREATED|
+|POST||create|201 CREATED|
+|PUT||update|200 OK|
 |DELETE||delete|200 OK|
 
 404 Not Found
@@ -205,6 +205,8 @@ app.get('/users/:id', (req,res)=>{
 		res.status(404).end();
 	}
 });
+
+app.put('/users', ...);
 
 app.post('/users', ...);
 
