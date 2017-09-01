@@ -278,6 +278,10 @@ function divideBy2 (decimal) {
 > a queue is a particular kind of abstract data type or collection in which the entities in the collection are kept in order. 
 
 ---
+## FIFO
+First In First Out
+
+---
 ## Enqueue & Dequeue
 - Enqueue: addition of entities to the rear terminal position
 - Dequeue: removal of entities from the front terminal position
