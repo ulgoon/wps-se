@@ -1,6 +1,6 @@
 # Fastcampus 
 ## Web Programming & Frontend Dev SCHOOL
-### Intro to Computer Science
+### Data Structure(stack, queue), gulp(1)
 
 ---
 <!--
