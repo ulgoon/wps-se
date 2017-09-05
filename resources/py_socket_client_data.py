@@ -30,8 +30,3 @@ if __name__ == '__main__':
         print("Client left")
     
     client_sock.close()
-
-
-
-
-

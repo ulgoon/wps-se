@@ -23,12 +23,3 @@ if __name__ == '__main__':
         print("Sockect connect error")
         print("Reason:", str(e))
         sys.exit();
-        
-
-
-
-
-
-
-
-        

@@ -2,7 +2,7 @@ import socket
 from time import ctime
 
 
-host = 'localhost' 
+host = 'localhost'
 port = 4444
 bufsize = 1024
 addr = (host, port)
