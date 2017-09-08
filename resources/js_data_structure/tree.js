@@ -32,4 +32,21 @@ function BinarySearchTree(){
             insertNode(root, newNode);
         }
     };
+
+    var preOrderTraverseNode = function(node, callback){
+        if (node !== null){
+            callback(node.key);
+            preOrderTraverseNode(node.left, callback);
+            preOrderTraverseNode(node.right, callback);
+        }
+    };
+
+    this.preOrderTraverse = function(callback){
+        preOrderTraverseNode(root, callback);
+    };
+
+}
+
+function printNode(value){
+        console.log(value);
 }
