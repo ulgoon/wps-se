@@ -20,7 +20,7 @@ function LinkedList(){
                 }
                 current.next = node;
             }
-            length++;
+             length++;
         };
 
         this.removeAt = function(position){
@@ -46,4 +46,40 @@ function LinkedList(){
             }
         };
 
+        this.insert = function(position, element){
+            if(position >= 0 && position <= length){
+                var current = head,
+                    previous,
+                    index = 0;
+                
+                if (position === 0){
+                    node.next = current;
+                    head = node;
+                } else{
+                    while(index++ < position){
+                        previous = current;
+                        current = current.next;
+                    }
+
+                    node.next = current;
+                    previous.next = node;
+                }
+                length++;
+
+                return true;
+            } else {
+                return false;
+            }
+        };
 }
+
+
+
+
+
+
+
+
+
+
+
