@@ -90,6 +90,29 @@ function LinkedList(){
             }
             return -1;
         };
+
+        this.isEmpty = function(){
+            return length === 0;
+        };
+
+        this.size = function(){
+            return length;
+        };
+
+        this.toString = function(){
+            var current = head,
+                string = '';
+
+            while(current){
+                string = current.element;
+                current = current.next;
+            }
+            return string;
+        };
+
+        this.getHead = function(){
+             return head;
+        };
 }
 
 
