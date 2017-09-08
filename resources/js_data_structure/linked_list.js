@@ -80,7 +80,7 @@ function LinkedList(){
 
         this.indexOf = function(element){
             var current = head,
-                index = 1;
+                index = 0;
             
             while(current){
                 if(element === current.element){
