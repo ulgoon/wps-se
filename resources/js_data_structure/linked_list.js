@@ -50,7 +50,8 @@ function LinkedList(){
             if(position >= 0 && position <= length){
                 var current = head,
                     previous,
-                    index = 0;
+                    index = 0,
+                    node = new Node(element);
                 
                 if (position === 0){
                     node.next = current;
