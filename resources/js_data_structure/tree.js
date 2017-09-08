@@ -45,6 +45,30 @@ function BinarySearchTree(){
         preOrderTraverseNode(root, callback);
     };
 
+    var inOrderTraverseNode = function(node, callback){
+        if (node !== null){
+            inOrderTraverseNode(node.left, callback);
+            callback(node.key);
+            inOrderTraverseNode(node.right, callback);
+        }
+    };
+
+    this.inOrderTraverse = function(callback){
+        inOrderTraverseNode(root, callback);
+    };
+
+    var postOrderTraverseNode = function(node, callback){
+        if (node !== null){
+            postOrderTraverseNode(node.left, callback);
+            postOrderTraverseNode(node.right, callback);
+            callback(node.key);
+        }
+    };
+
+    this.postOrderTraverse = function(callback){
+        postOrderTraverseNode(root, callback);
+    };
+
 }
 
 function printNode(value){
