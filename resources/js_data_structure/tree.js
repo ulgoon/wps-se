@@ -26,38 +26,10 @@ function BinarySearchTree(){
     this.insert = function(key){
         var newNode = new Node(key);
 
-        if(node === null){
+        if(root === null){
             root = newNode;
         } else {
             insertNode(root, newNode);
         }
     };
-
-
-
-
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
