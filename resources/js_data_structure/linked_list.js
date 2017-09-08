@@ -22,4 +22,28 @@ function LinkedList(){
             }
             length++;
         };
+
+        this.removeAt = function(position){
+            if(position > -1 && position < length){
+                var current = head,
+                    previous,
+                    index=0;
+
+                if (position === 0){
+                    head = current.next;
+                } else {
+                    while (index++ < position){
+                        previous = current;
+                        current = current.next;
+                    }
+                    previous.next = current.next;
+                }
+                length--;
+            
+                return current.element;
+            } else {
+                return null;
+            }
+        };
+
 }
