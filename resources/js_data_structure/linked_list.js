@@ -71,6 +71,25 @@ function LinkedList(){
                 return false;
             }
         };
+        
+        this.remove = function(element){
+            var index = this.indexOf(element);
+            return this.removeAt(index);
+        };
+
+        this.indexOf = function(element){
+            var current = head,
+                index = 1;
+            
+            while(current){
+                if(element === current.element){
+                    return index;
+                }
+                index++;
+                current = current.next;
+            }
+            return -1;
+        };
 }
 
 
