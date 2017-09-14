@@ -130,7 +130,7 @@ function LinkedList(){
 ## Linked List - append
 ```javascript
 this.append = function(element){
-    var note = new Node(element),
+    var node = new Node(element),
         current;
     if (head === null){
         head = node;
@@ -330,7 +330,7 @@ function BinarySearchTree() {
 ```javascript
 ...
     this.insert = function(key){
-        var newNode = new Node(key);
+        var newNode = new node(key);
 
         if (root === null){
             root = newNode;

@@ -1,3 +1,5 @@
 #custom
 .DS_Store
 resources/gulp_practice/node_modules/*
+resources/gulp_practice/public/*
+resources/node_modules/*
