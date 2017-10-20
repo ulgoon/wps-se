@@ -11,7 +11,9 @@
   "devDependencies": {
     "express": "^4.15.4",
     "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.8.0",
     "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^3.3.0",
     "gulp-uglify": "^3.0.0",
     "pump": "^1.0.2"
   }
