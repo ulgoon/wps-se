@@ -9,5 +9,6 @@ Lesson 4. Web, REST API, socket programming
 Lesson 5. Data Structure(Stack, Queue), Gulp(1)
 Lesson 6. Data Structure(Linked List, Tree), Gulp(2)
 
-## Wireshark test
-wer
+## sqlite3 on windows tutorial
+
+http://johnatten.com/2014/12/07/installing-and-using-sqlite-on-windows/
