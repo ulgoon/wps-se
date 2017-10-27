@@ -12,3 +12,10 @@ Lesson 6. Data Structure(Linked List, Tree), Gulp(2)
 ## sqlite3 on windows tutorial
 
 http://johnatten.com/2014/12/07/installing-and-using-sqlite-on-windows/
+
+## sqlite practice screenshot
+
+![](./img/wps-se-db-1.png)
+![](./img/wps-se-db-2.png)
+![](./img/wps-se-db-3.png)
+![](./img/wps-se-db-4.png)
