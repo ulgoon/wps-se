@@ -5,3 +5,4 @@ resources/gulp_practice/public/*
 resources/node_modules/*
 handouts/legacy/*
 resources/legacy/*
+resources/*.db
