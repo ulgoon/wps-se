@@ -4,11 +4,20 @@ var pump = require('pump');
 var uglify = require('gulp-uglify');
 var concat = require('gulp-concat');
 var imagemin = require('gulp-imagemin');
+var cleancss = require('gulp-clean-css');
+var clean = require('gulp-clean');
 
 var publicPath = {
     src: "./public/src/",
     dest: "./public/dist/"
 }
+
+gulp.task("clean", function(){
+    return pump([
+        gulp.src(publicPath.dest + "*"),
+        clean()
+    ]);
+});
 
 gulp.task("uglify", function(){
     pump([
@@ -34,7 +43,24 @@ gulp.task("imagemin", function(){
     ]);
 });
 
-gulp.task("default", ["uglify"]);
+gulp.task("cleancss", function(){
+    pump([
+        gulp.src(publicPath.src + "css/*"),
+        cleancss(),
+        gulp.dest(publicPath.dest + "css/")
+    ]);
+});
+
+gulp.task("watch", function(){
+    gulp.watch(publicPath.src + "js/*.js", ["uglify", "concat"]);
+
+    //gulp.watch(publicPath.src + "css/*.css", ["clean", "uglify", "concat"]);
+    //gulp.watch(publicPath.src + "img/*.jpg", ["clean", "uglify", "concat"]);
+    //gulp.watch(publicPath.src + "scss/*.scss", ["clean", "uglify", "concat"]);
+
+});
+
+gulp.task("default", ["watch"]);
 
 /*
 gulp.task("hello", function(){
