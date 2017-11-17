@@ -1,0 +1,56 @@
+p {
+	background-color: black;
+	color: white;
+}
+
+#sum {
+	color: yellow;
+}
+
+.tname {
+	background-color: white;
+	color: green;
+}
+
+/*
+ * 테이블 관련 CSS 속성
+ * border: 픽셀값 형태 색상 의 순서로 지정합니다.
+ */
+
+.table1 {
+	border-collapse: collapse;
+	text-align: right; /* 가로정렬 */
+	caption-side: bottom;
+}
+
+.table1 > * > * > td, th {
+	border: 5px solid rgb(178,33,180);
+
+}
+
+/*
+ * 반응형 웹을 위한 유튜브 감싸기 
+ */
+
+.ul-ytwrapper {
+	position: relative;
+	padding-bottom: 56.25%;
+	width: 100%;
+}
+
+.ul-ytwrapper iframe {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+

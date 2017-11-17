@@ -2,6 +2,8 @@ var gulp = require('gulp');
 var pump = require('pump');
 
 var uglify = require('gulp-uglify');
+var concat = require('gulp-concat');
+var imagemin = require('gulp-imagemin');
 
 var publicPath = {
     src: "./public/src/",
@@ -16,6 +18,21 @@ gulp.task("uglify", function(){
     ]);
 });
 
+gulp.task("concat", function(){
+    pump([
+        gulp.src([publicPath.src + "js/concat1.js", publicPath.src + "js/concat2.js", publicPath.src + "js/concat3.js"]),
+        concat('concatenated.js'),
+        gulp.dest(publicPath.dest + "js/")
+    ]);
+});
+
+gulp.task("imagemin", function(){
+    pump([
+        gulp.src(publicPath.src + "img/*.jpg"),
+        imagemin(),
+        gulp.dest(publicPath.dest + "img/")
+    ]);
+});
 
 gulp.task("default", ["uglify"]);
 
