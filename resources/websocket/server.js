@@ -6,7 +6,8 @@ var http = require('http').Server(app);
 app.set("port", process.env.PORT || 8080);
 
 app.get('/', function(req,res){
-    res.send("Chat start");
+    //res.send("Chat start");
+    res.sendFile(__dirname + '/views/index.html');
 });
 
 http.listen(app.get("port"), function(){
