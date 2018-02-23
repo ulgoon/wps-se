@@ -20,6 +20,9 @@ app.get('/chat', function(req,res){
 
 io.on('connection', function(socket){
     console.log("New user connected!");
+    socket.on('disconnect', function(){
+        console.log("user disconnected");
+    });
 });
 
 http.listen(app.get('port'), function(){
