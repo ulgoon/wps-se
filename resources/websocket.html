@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>HTML5 Websocket!!</title>
+</head>
+<body>
+ <script>
+  var wsUri = "ws://echo.websocket.org/";
+  var output;
+  function init(){
+  	output = document.getElementById("output");
+  	testWebSocket();
+  }
+
+  function testWebSocket(){
+    websocket = new WebSocket(wsUri);
+    websocket.onopen = function(evt){onOpen(evt)};
+    websocket.onclose = function(evt){onClose(evt)};
+    websocket.onmessage = function(evt){onMessage(evt)};
+    websocket.onerror = function(evt){onError(evt)};
+  }
+  function onOpen(evt){
+  	writeToDiv("CONNECTED!!");
+  	doSend("1 user logged in");
+  }
+  function onClose(evt){
+  	writeToDiv("DISCONNECTED!!");
+  }
+  function onMessage(evt){
+  	writeToDiv("MESSAGE: " + evt.data);
+  }
+  function onError(evt){
+  	writeToDiv("ERROR: " + evt.data);
+  }
+  function doSend(message){
+  	writeToDiv("SENT: " + message);
+  	websocket.send(message);
+  }
+  function writeToDiv(message){
+  	var pre = document.createElement("p");
+  	pre.style.wordWrap = "break-word";
+  	pre.innerHTML = message;
+  	output.appendChild(pre);
+  }
+  window.addEventListener("load", init, false);
+ </script>
+ <h1>Websocket simple example</h1>
+ <div id="output"></div>
+</body>
+</html>
+
+
+
+
+
+
