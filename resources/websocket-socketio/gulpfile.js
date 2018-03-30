@@ -4,6 +4,7 @@ var pump = require('pump');
 var uglify = require('gulp-uglify');
 var concat = require('gulp-concat');
 var cleanCss = require('gulp-clean-css');
+var concatCss = require('gulp-concat-css');
 
 
 // gulp informations
@@ -37,6 +38,14 @@ gulp.task("uglify", function(){
     ]);
 });
 
+gulp.task("concatCss", function(){
+    pump([
+        gulp.src(publicPath.src + '*.css'),
+        concatCss('style.min.css'),
+        gulp.dest(publicPath.dest)
+    ]);
+});
+
 gulp.task("cleanCss", function(){
     pump([
         gulp.src(publicPath.src + '*.css'),
@@ -46,4 +55,24 @@ gulp.task("cleanCss", function(){
 });
 
 // gulp default task
-gulp.task("default", ["cleanCss"]);
+gulp.task("default", ["watch"]);
+
+// gulp watch tasks
+gulp.task("watch", function(){
+    gulp.watch("./public/src/*.css", ["concatCss"]);
+    gulp.watch("./public/src/*.js", ["concat", "uglify"]);
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+

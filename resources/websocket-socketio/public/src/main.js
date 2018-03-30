@@ -1,6 +1,7 @@
 function Queue_with_stack() {
     var inBox = [];
     var outBox = [];
+    var dummy = null;
 
     this.enqueue = function(num) {
         inBox.push(num);

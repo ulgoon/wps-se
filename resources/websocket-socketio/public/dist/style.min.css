@@ -1,0 +1,49 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #121267;
+}
+
+.some-class {
+  border: none;
+}
+
+#some-id {
+  max-width: 1200px;
+}
+
+#container {
+  max-width: 1080px;
+}
+body {
+  background-color: gray;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #121267;
+}
+
+.some-class {
+  border: none;
+}
+
+#some-id {
+  max-width: 1200px;
+}
+
+#container {
+  max-width: 1080px;
+}
