@@ -3,6 +3,7 @@ var gulp = require('gulp');
 var pump = require('pump');
 var uglify = require('gulp-uglify');
 var concat = require('gulp-concat');
+var cleanCss = require('gulp-clean-css');
 
 
 // gulp informations
@@ -36,5 +37,13 @@ gulp.task("uglify", function(){
     ]);
 });
 
+gulp.task("cleanCss", function(){
+    pump([
+        gulp.src(publicPath.src + '*.css'),
+        cleanCss({compatibility: 'ie8'}),
+        gulp.dest(publicPath.dest)
+    ]);
+});
+
 // gulp default task
-gulp.task("default", ["concat", "uglify"]);
+gulp.task("default", ["cleanCss"]);
