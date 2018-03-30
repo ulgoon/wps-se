@@ -81,7 +81,7 @@ footer : fastcampus 프론트엔드 개발 스쿨, Wooyoung Choi, 2018
 ---
 ## 일정 추정 과제
 1. 은행 예금 계좌 및 체크카드 발급절차
-2. Fizzbuzz
+2. Fizzbuzz(조건문 반복문으로, map, filter로)
 3. Profile Porfolio Page
 
 ex)
