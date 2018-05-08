@@ -11,10 +11,11 @@ footer : fastcampus 프론트엔드 개발 스쿨, Wooyoung Choi, 2018
 ## Introduce
 ### 최우영
 
+- Co-founder, Developer at Disceptio
 - Solution Architect, Web Developer, Instructor
 - Skills: Python, Golang, Julia, Node.js, Google tag manager ...
 
-#### blog: https://blog.ulgoon.com/
+#### blog: https://ulgoon.github.io/
 #### github: https://github.com/ulgoon/
 #### email: me@ulgoon.com
 
