@@ -70,10 +70,10 @@ footer : fastcampus 프론트엔드 개발 스쿨, Wooyoung Choi, 2018
 ### I'm still hungry
 ```
 1. hunger가 true가 됨
-2. 현재위치가 집일때,
+2. 돈이 없고, 현재위치가 집일때,
 	1. 밥솥에 밥이 있다면, 해결한다.
 	2. 굶는다.
-3. 현재위치가 밖일때,
+3. 돈이 있고, 현재위치가 밖일때,
 	1. 현금이 10만원 초과라면, 레스토랑을 간다.
 	2. 현금이 10만원 이하라면, 편의점을 간다.
 ```
@@ -90,6 +90,17 @@ footer : fastcampus 프론트엔드 개발 스쿨, Wooyoung Choi, 2018
 나머지는 숫자
 
 > 영어로 작성하면 더 좋지만.. 한글로!
+
+---
+### fizzbuzz
+```
+1. 사용자로부터 숫자 하나를 받아 n에 할당한다.
+2. 1부터 n까지 숫자를 진행시키면서,
+	3. 만약에 해당숫자가 15의 배수라면, "fizzbuzz"를 출력한다.
+	4. 만약에 해당숫자가 3의 배수라면, "fizz"를 출력한다.
+	5. 만약에 해당숫자가 5의 배수라면, "buzz"를 출력한다.
+	6. 3,4,5의 경우를 만족하지 못한 경우, 해당숫자를 그대로 출력한다.
+```
 
 ---
 ### fizzbuzz-Kor
@@ -118,8 +129,9 @@ footer : fastcampus 프론트엔드 개발 스쿨, Wooyoung Choi, 2018
 ---
 ### fizzbuzz - python
 ```python
-num = input("get number for fizzbuzz: ")
-for i in range(1,100+1):
+num = int(input("get number for fizzbuzz: "))
+i=1
+while i <= num:
 	if i % 3 == 0:
 		print("fizz")
 	elif i % 5 == 0:
