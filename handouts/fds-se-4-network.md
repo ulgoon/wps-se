@@ -408,12 +408,21 @@ var app = new Vue({
 ## 웹 개발의 현재
 ### javaScript
 
+HungarianNotation
+intNumber
+charMacBook
+
+snake_case
+CamelCase
+
+javaScriptStyleCamelCase
+
 ---
 ## Client-side
 - HTML/CSS, javaScript
 - jQuery, AJAX
 - Front-end Web Framework
-	- AngularJS
+	- Angular
 	- React.js
 	- Vue.js
 - CSS Framework
@@ -456,11 +465,11 @@ var app = new Vue({
 
 ### URI 
 - Uniform Resource Information
-- `https://www.example.com/post/how-to-make-url`
+- `https://www.example.com/post/how-to-make-url.html`
 ### URL 
 - Uniform Resource Locator
 - `https://www.example.com/post/`
 
 ### URN 
 - Uniform Resource Name
-- `www.example.com/post/how-to-make-url`
+- `www.example.com/post/how-to-make-url.html`
