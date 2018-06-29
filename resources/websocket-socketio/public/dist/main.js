@@ -1,1 +1,0 @@
-function Queue_with_stack(){var e=[],u=[];this.enqueue=function(u){e.push(u)},this.dequeue=function(){if(0<u.length)return u.pop();for(;1<e.length;)u.push(e.pop());return e.pop()}}
