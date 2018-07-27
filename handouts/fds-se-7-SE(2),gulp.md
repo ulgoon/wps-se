@@ -1,6 +1,6 @@
 # Fastcampus 
 ## Frontend Dev SCHOOL
-### colaborate with git, websocket
+### websocket, release cycle, gulp
 
 ---
 <!--
